@@ -1,0 +1,37 @@
+body {
+  background-image: url("https://pmcvariety.files.wordpress.com/2018/08/star-wars-commander.png?w=1000&h=563&crop=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.jumbotron {
+  background-image: url("https://www.discraft.com/content/files/images/HOME%20PAGE/Star%20Wars/Product%20Page/STARWARSSS%20%281%29.jpg");
+}
+.headerImg h1 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  padding: 140px;
+}
+h3 {
+  font-size: 30px;
+  color: white;
+}
+.card {
+  float: left;
+  margin: 2px;
+  height: 175px;
+  width: 175px;
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+}
+.starImage {
+  height: 175px;
+  width: 175px;
+}
+.card-footer {
+  background-color: white;
+  text-align: center;
+  font: 15px;
+}
