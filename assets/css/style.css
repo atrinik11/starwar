@@ -1,37 +1,81 @@
+html,
+head,
 body {
-  background-image: url("https://pmcvariety.files.wordpress.com/2018/08/star-wars-commander.png?w=1000&h=563&crop=1");
+  background-image: url("../images/img1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
 }
 .jumbotron {
   background-image: url("https://www.discraft.com/content/files/images/HOME%20PAGE/Star%20Wars/Product%20Page/STARWARSSS%20%281%29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
-.headerImg h1 {
+.begin {
+  margin-left: 850px;
+  margin-top: 150px;
+  color: white;
+  font-size: 25px;
+  border: solid;
+  border-width: 2px;
+  width: 220px;
+  height: 75px;
+}
+.begin:hover {
+  background: white;
+  color: rgb(10, 20, 71);
+  border: none;
+}
+h1 {
   font-size: 50px;
   text-align: center;
-  color: white;
+  color: transparent;
   padding: 140px;
 }
+
 h3 {
   font-size: 30px;
   color: white;
 }
-.card {
+.character {
   float: left;
   margin: 2px;
-  height: 175px;
-  width: 175px;
-  border: solid;
-  border-width: 1px;
-  border-color: white;
+  height: 250px;
+  width: 250px;
+  background-color: transparent;
 }
-.starImage {
-  height: 175px;
-  width: 175px;
-}
-.card-footer {
-  background-color: white;
+.characterName,
+.characterHealth {
+  color: white;
   text-align: center;
+}
+.characterName {
+  font-size: 20px;
+}
+.characterImg {
+  height: 100%;
+  width: 100%;
+}
+.characterImg:hover {
+  cursor: pointer;
+}
+.characterHealth {
+  margin-bottom: 10px;
   font: 15px;
+}
+.yourPlayer,
+.yourEnemy {
+  margin-top: 120px;
+}
+#yourCharacter,
+.selectedEnemy {
+  margin: 2px;
+  height: 350px;
+  width: 450px;
+  background-color: transparent;
+}
+.attack {
+  margin-left: 375px;
+  height: 70px;
 }

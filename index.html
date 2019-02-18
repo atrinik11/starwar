@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Star Wars</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
@@ -15,18 +21,33 @@
     <script src="assets/javascript/game.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="jumbotron headerImg">
-        <h1>Star Wars RPG!</h1>
-      </div>
-      <h3 class="selectPlayer">Select your player...</h3>
+    <!-- <div class="jumbotron headerImg">
+      <h1>Star Wars RPG!</h1>
       <div class="row">
-        <div id="display-img"></div>
+        <button type="button" class="btn btn-lg begin">Begin the War!</button>
       </div>
-      <div class="row yourCharacter"></div>
-      <div class="row selectEnemyToFight"></div>
-      <div class="row attack"></div>
-      <div class="row selectedEnemy"></div>
+    </div> -->
+    <div class="container">
+      <div class="row display-pg">
+        <h3 class="selectPlayer">Select your player...</h3>
+        <h3 class="selectEnemyToFight">Select One Enemy To Fight...</h3>
+        <h3 class="benchEnemy">Wait For Your Turn!!</h3>
+        <div class="col-12">
+          <div id="display-img"></div>
+        </div>
+        <div class="col-6">
+          <h3 class="yourPlayer">Your Player</h3>
+          <div id="yourCharacter"></div>
+        </div>
+        <div class="col-6">
+          <h3 class="yourEnemy">Defender</h3>
+          <div class="selectedEnemy"></div>
+        </div>
+        <br />
+        <button type="button" class="btn btn-danger btn-lg attack">
+          Attack
+        </button>
+      </div>
     </div>
   </body>
 </html>
