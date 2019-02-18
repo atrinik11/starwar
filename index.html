@@ -21,12 +21,12 @@
     <script src="assets/javascript/game.js"></script>
   </head>
   <body>
-    <!-- <div class="jumbotron headerImg">
-      <h1>Star Wars RPG!</h1>
-      <div class="row">
-        <button type="button" class="btn btn-lg begin">Begin the War!</button>
+    <!-- <div class="jumbotron headerImg"> -->
+    <h1>Star Wars RPG!</h1>
+    <div class="row">
+        <button type="button" class="btn btn-lg restart">Restart Game</button>
       </div>
-    </div> -->
+    </div> 
     <div class="container">
       <div class="row display-pg">
         <h3 class="selectPlayer">Select your player...</h3>
@@ -35,18 +35,20 @@
         <div class="col-12">
           <div id="display-img"></div>
         </div>
-        <div class="col-6">
+        <div class="col-5">
           <h3 class="yourPlayer">Your Player</h3>
           <div id="yourCharacter"></div>
         </div>
-        <div class="col-6">
+        <div class="col-2">
+          <button type="button" class="btn btn-danger btn-lg attack">
+            Attack
+          </button>
+        </div>
+        <div class="col-5">
           <h3 class="yourEnemy">Defender</h3>
           <div class="selectedEnemy"></div>
         </div>
         <br />
-        <button type="button" class="btn btn-danger btn-lg attack">
-          Attack
-        </button>
       </div>
     </div>
   </body>

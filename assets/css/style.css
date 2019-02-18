@@ -1,18 +1,13 @@
 html,
 head,
 body {
-  background-image: url("../images/img1.jpg");
+  background-image: url("../images/bgImg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
 }
-.jumbotron {
-  background-image: url("https://www.discraft.com/content/files/images/HOME%20PAGE/Star%20Wars/Product%20Page/STARWARSSS%20%281%29.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-.begin {
+.restart {
+  display: none;
   margin-left: 850px;
   margin-top: 150px;
   color: white;
@@ -22,7 +17,7 @@ body {
   width: 220px;
   height: 75px;
 }
-.begin:hover {
+.restart:hover {
   background: white;
   color: rgb(10, 20, 71);
   border: none;
@@ -30,8 +25,8 @@ body {
 h1 {
   font-size: 50px;
   text-align: center;
-  color: transparent;
-  padding: 140px;
+  color: white;
+  padding: 40px;
 }
 
 h3 {
@@ -41,8 +36,8 @@ h3 {
 .character {
   float: left;
   margin: 2px;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   background-color: transparent;
 }
 .characterName,
@@ -71,11 +66,15 @@ h3 {
 #yourCharacter,
 .selectedEnemy {
   margin: 2px;
-  height: 350px;
-  width: 450px;
+  height: 250px;
+  width: 250px;
   background-color: transparent;
 }
+.selectedEnemy .character {
+  margin-right: -160px;
+}
 .attack {
-  margin-left: 375px;
+  margin-top: 300px;
+  margin-right: 190px;
   height: 70px;
 }

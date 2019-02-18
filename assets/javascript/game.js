@@ -66,7 +66,7 @@ $(document).ready(function() {
 
   renderCharacters = () => {
     let keys = Object.keys(characters);
-    console.log("Keys: ", keys);
+
     for (let i = 0; i < keys.length; i++) {
       let characterKey = keys[i];
       let character = characters[characterKey];
@@ -86,7 +86,6 @@ $(document).ready(function() {
         .append(charName)
         .append(charImg)
         .append(charHealth);
-      console.log(charDiv);
       $("#display-img").append(charDiv);
     }
   };
@@ -123,7 +122,8 @@ $(document).ready(function() {
       $("#yourCharacter").empty();
       enemySelected = false;
       playerSelected = false;
-      startGame();
+      $(".restart").show();
+      $(".display-pg").hide();
     }
     if (gameState.selectedCharacter.health <= 0) {
       alert(
@@ -133,7 +133,8 @@ $(document).ready(function() {
       $(".selectedEnemy").empty();
       enemySelected = false;
       playerSelected = false;
-      startGame();
+      $(".restart").show();
+      $(".display-pg").hide();
     }
   };
 
@@ -142,9 +143,8 @@ $(document).ready(function() {
     if (playerSelected === false && enemySelected === false) {
       $(".yourPlayer").show();
       let selectedKey = $(this).attr("data-name");
-      console.log(selectedKey);
+
       gameState.selectedCharacter = characters[selectedKey];
-      console.log(gameState.selectedCharacter);
       $("#yourCharacter").append(this);
       $(".selectPlayer").hide();
       $(".selectEnemyToFight").show();
@@ -156,7 +156,6 @@ $(document).ready(function() {
       $(".selectedEnemy").show();
       $(".yourEnemy").show();
       selectedKey = $(this).attr("data-name");
-      console.log("enemy: ", selectedKey);
       gameState.selectedDefender = characters[selectedKey];
       $(".selectedEnemy").append(this);
       $(".selectEnemyToFight").hide();
@@ -182,6 +181,13 @@ $(document).ready(function() {
       );
       isTheGameOver();
     }
+  });
+
+  //Restart Game
+  $(".restart").on("click", function() {
+    $(".restart").hide();
+    $(".display-pg").show();
+    startGame();
   });
   startGame();
 });
