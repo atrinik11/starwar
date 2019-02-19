@@ -66,7 +66,6 @@ $(document).ready(function() {
 
   renderCharacters = () => {
     let keys = Object.keys(characters);
-
     for (let i = 0; i < keys.length; i++) {
       let characterKey = keys[i];
       let character = characters[characterKey];
@@ -89,9 +88,6 @@ $(document).ready(function() {
       $("#display-img").append(charDiv);
     }
   };
-
-  //Select Enemy
-  selectEnemy = selectedKey => {};
 
   //Attack function
   attack = () => {
@@ -130,6 +126,7 @@ $(document).ready(function() {
         "You have been defeated by " + gameState.selectedDefender.name + " !!"
       );
       $("#yourCharacter").empty();
+      $("#display-img").empty();
       $(".selectedEnemy").empty();
       enemySelected = false;
       playerSelected = false;
