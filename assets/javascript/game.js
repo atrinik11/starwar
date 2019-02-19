@@ -142,7 +142,12 @@ $(document).ready(function() {
       let selectedKey = $(this).attr("data-name");
 
       gameState.selectedCharacter = characters[selectedKey];
+      var title = $("<h3>");
+      title.addClass("yourPlayer");
+      title.text("Your Player");
+      $("#yourCharacter").append(title);
       $("#yourCharacter").append(this);
+      console.log("Player: ", $("#yourCharacter"));
       $(".selectPlayer").hide();
       $(".selectEnemyToFight").show();
       playerSelected = true;
@@ -154,6 +159,10 @@ $(document).ready(function() {
       $(".yourEnemy").show();
       selectedKey = $(this).attr("data-name");
       gameState.selectedDefender = characters[selectedKey];
+      let title2 = $("<h3>");
+      title2.addClass("yourEnemy");
+      title2.text("Defender");
+      $(".selectedEnemy").append(title2);
       $(".selectedEnemy").append(this);
       $(".selectEnemyToFight").hide();
       $(".benchEnemy").show();

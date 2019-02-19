@@ -90,9 +90,13 @@ h3 {
   margin-right: -160px;
 }
 .attack {
-  margin-top: 300px;
-  margin-right: 190px;
-  height: 30px;
+  margin-top: 180px;
+  margin-right: 700px;
+  height: 40px;
+}
+#yourCharacter .character,
+.selectedEnemy .character {
+  margin-left: 40px;
 }
 
 @media (min-width: 700px) {
